@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     @IBOutlet weak var playerStepperLabel: UILabel!
     @IBOutlet weak var teamStepperLabel: UILabel!
@@ -21,6 +21,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         namesLabel.text = ""
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = false
     }
     
     @IBAction func playerStepper(_ sender: UIStepper) {
@@ -37,6 +45,7 @@ class ViewController: UIViewController {
         if brain.canStart == true {
             let isRandomOn = randomSwitch.isOn
             brain.startGame(switchIsOn: isRandomOn)
+            performSegue(withIdentifier: "goToPlayers", sender: self)
         }else {
             //Not ready
         }
@@ -56,8 +65,12 @@ class ViewController: UIViewController {
         }
     }
     
-    func goToWords() {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "goToPlayers") {
+            let destinationVC = segue.destination as! PlayersViewController
+            destinationVC.brain = brain
+            destinationVC.teams = brain.teams
+        }
     }
 }
 

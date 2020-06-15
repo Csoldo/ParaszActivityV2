@@ -6,15 +6,16 @@
 //  Copyright © 2020. Nagy Boldizsár. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Team {
     let score = 0
     var players = [Player]()
-    
+    var color : UIColor
     func printPlayers() {
         for player in players {
             print(player.name)
         }
     }
+    
 }

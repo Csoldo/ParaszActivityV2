@@ -16,6 +16,7 @@ class Brain {
     var numberOfTeams = 2
     var canStart = false
     var teamCounter = 0
+    var colors = Color()
     func assignPlayers(text: String?) -> String{
         if let name = text {
             players.append(name)
@@ -50,7 +51,7 @@ class Brain {
                 y += 1
                 i += 1
             }
-            teams.append(Team(players: tmpPlayers))
+            teams.append(Team(players: tmpPlayers, color: colors.colors[x]))
             tmpPlayers.removeAll()
             x += 1
             
@@ -86,4 +87,26 @@ class Brain {
         return newString
     }
     
+    func teamsToString(teams: [Team]) -> [String] {
+        var stringArray = [String]()
+        var i = 1
+        for team in teams {
+            var players = ""
+            for player in team.players {
+                players += "\n\(player.name)"
+            }
+            
+            stringArray.append("Team \(i)\n\(players)")
+            i += 1
+        }
+        return stringArray
+    }
+    
+    func getTeams() -> [Team] {
+        return self.teams
+    }
+    
+    func getTotalPlayers() -> Int{
+        return self.numberOfTeams * self.playersInTeam
+    }
 }

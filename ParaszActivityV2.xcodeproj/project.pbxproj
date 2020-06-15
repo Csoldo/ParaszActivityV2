@@ -11,12 +11,14 @@
 		ED05CB2024910EDC003D96DE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED05CB1F24910EDC003D96DE /* Player.swift */; };
 		ED4BB966248D16A9001D309B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BB965248D16A9001D309B /* AppDelegate.swift */; };
 		ED4BB968248D16A9001D309B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BB967248D16A9001D309B /* SceneDelegate.swift */; };
-		ED4BB96A248D16A9001D309B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BB969248D16A9001D309B /* ViewController.swift */; };
+		ED4BB96A248D16A9001D309B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BB969248D16A9001D309B /* SettingsViewController.swift */; };
 		ED4BB96D248D16A9001D309B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4BB96B248D16A9001D309B /* Main.storyboard */; };
 		ED4BB96F248D16AF001D309B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4BB96E248D16AF001D309B /* Assets.xcassets */; };
 		ED4BB972248D16AF001D309B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4BB970248D16AF001D309B /* LaunchScreen.storyboard */; };
 		ED71ADEE249502E4008EABA9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED71ADED249502E4008EABA9 /* K.swift */; };
 		ED9A3BAD24923355005DABC1 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A3BAC24923355005DABC1 /* Brain.swift */; };
+		EDCD82132497FFCF00630560 /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCD82122497FFCF00630560 /* WordsViewController.swift */; };
+		EDE79E9324977B2A00D909A8 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE79E9224977B2A00D909A8 /* PlayersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +27,15 @@
 		ED4BB962248D16A9001D309B /* ParaszActivityV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParaszActivityV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4BB965248D16A9001D309B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED4BB967248D16A9001D309B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ED4BB969248D16A9001D309B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED4BB969248D16A9001D309B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		ED4BB96C248D16A9001D309B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED4BB96E248D16AF001D309B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4BB971248D16AF001D309B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED4BB973248D16AF001D309B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED71ADED249502E4008EABA9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		ED9A3BAC24923355005DABC1 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		EDCD82122497FFCF00630560 /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
+		EDE79E9224977B2A00D909A8 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 		ED47E19C248D4693006D150D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ED4BB969248D16A9001D309B /* ViewController.swift */,
+				ED4BB969248D16A9001D309B /* SettingsViewController.swift */,
+				EDE79E9224977B2A00D909A8 /* PlayersViewController.swift */,
+				EDCD82122497FFCF00630560 /* WordsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,11 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCD82132497FFCF00630560 /* WordsViewController.swift in Sources */,
 				ED05CB1E24910ED1003D96DE /* Team.swift in Sources */,
 				ED71ADEE249502E4008EABA9 /* K.swift in Sources */,
-				ED4BB96A248D16A9001D309B /* ViewController.swift in Sources */,
+				ED4BB96A248D16A9001D309B /* SettingsViewController.swift in Sources */,
 				ED4BB966248D16A9001D309B /* AppDelegate.swift in Sources */,
 				ED05CB2024910EDC003D96DE /* Player.swift in Sources */,
+				EDE79E9324977B2A00D909A8 /* PlayersViewController.swift in Sources */,
 				ED9A3BAD24923355005DABC1 /* Brain.swift in Sources */,
 				ED4BB968248D16A9001D309B /* SceneDelegate.swift in Sources */,
 			);

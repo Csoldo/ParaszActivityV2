@@ -6,8 +6,12 @@
 //  Copyright © 2020. Nagy Boldizsár. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Player {
     let name: String
+}
+
+struct Color {
+    let colors : [UIColor] = [.green, .blue, .red, .black, .gray, .orange]
 }
