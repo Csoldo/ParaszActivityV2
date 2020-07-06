@@ -16,6 +16,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var randomSwitch: UISwitch!
     @IBOutlet weak var namesLabel: UILabel!
+    @IBOutlet weak var doneButton: UIButton!
     
     var brain = Brain()
     override func viewDidLoad() {
@@ -59,7 +60,8 @@ class SettingsViewController: UIViewController {
             textField.placeholder = "Write more names"
             
         }else {
-            textField.text = "ready"
+            doneButton.isEnabled = false
+
             startButton.backgroundColor = .green
             
         }

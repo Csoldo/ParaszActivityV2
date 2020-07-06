@@ -21,6 +21,7 @@ class PlayersViewController: UIViewController {
     var teams = [Team]()
     var numberOfWords = 3
     var totalWords = 12
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         team1.text = ""
@@ -41,66 +42,22 @@ class PlayersViewController: UIViewController {
         }
     }
     
-    
     @IBAction func startPressed(_ sender: UIButton) {
-        
     }
     
     func writeNames(){
+        let teamsLabelArray : [UILabel] = [team1, team2, team3, team4, team5, team6]
         if let array = brain?.teamsToString(teams: teams) {
-            print(array[0])
-            switch array.count {
-            case 2:
-                team1.text = array[0]
-                team2.text = array[1]
-                team1.textColor = teams[0].color
-                team2.textColor = teams[1].color
-            case 3:
-                team1.text = array[0]
-                team2.text = array[1]
-                team3.text = array[2]
-                team1.textColor = teams[0].color
-                team2.textColor = teams[1].color
-                team3.textColor = teams[2].color
-            case 4:
-                team1.text = array[0]
-                team2.text = array[1]
-                team3.text = array[2]
-                team4.text = array[3]
-                team1.textColor = teams[0].color
-                team2.textColor = teams[1].color
-                team3.textColor = teams[2].color
-                team4.textColor = teams[3].color
-            case 5:
-                team1.text = array[0]
-                team2.text = array[1]
-                team3.text = array[2]
-                team4.text = array[3]
-                team5.text = array[4]
-                team1.textColor = teams[0].color
-                team2.textColor = teams[1].color
-                team3.textColor = teams[2].color
-                team4.textColor = teams[3].color
-                team5.textColor = teams[4].color
-
-            case 6:
-                team1.text = array[0]
-                team2.text = array[1]
-                team3.text = array[2]
-                team4.text = array[3]
-                team5.text = array[4]
-                team6.text = array[5]
-                team1.textColor = teams[0].color
-                team2.textColor = teams[1].color
-                team3.textColor = teams[2].color
-                team4.textColor = teams[3].color
-                team5.textColor = teams[4].color
-                team6.textColor = teams[5].color
-            default:
-                print("Ohhh fuck")
-            }  
+            let x = array.count
+            var i = 0
+            while x > i {
+                teamsLabelArray[i].text = array[i]
+                teamsLabelArray[i].textColor = teams[i].color
+                i += 1
+            }
         }
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "goToWords") {
             let destinationVC = segue.destination as! WordsViewController

@@ -17,6 +17,8 @@
 		ED4BB972248D16AF001D309B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4BB970248D16AF001D309B /* LaunchScreen.storyboard */; };
 		ED71ADEE249502E4008EABA9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED71ADED249502E4008EABA9 /* K.swift */; };
 		ED9A3BAD24923355005DABC1 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A3BAC24923355005DABC1 /* Brain.swift */; };
+		EDB08A892499210600AB5D4E /* ScoreBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB08A882499210600AB5D4E /* ScoreBoardViewController.swift */; };
+		EDB08A8B2499216500AB5D4E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB08A8A2499216500AB5D4E /* GameViewController.swift */; };
 		EDCD82132497FFCF00630560 /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCD82122497FFCF00630560 /* WordsViewController.swift */; };
 		EDE79E9324977B2A00D909A8 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE79E9224977B2A00D909A8 /* PlayersViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		ED4BB973248D16AF001D309B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED71ADED249502E4008EABA9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		ED9A3BAC24923355005DABC1 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		EDB08A882499210600AB5D4E /* ScoreBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardViewController.swift; sourceTree = "<group>"; };
+		EDB08A8A2499216500AB5D4E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		EDCD82122497FFCF00630560 /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
 		EDE79E9224977B2A00D909A8 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +67,8 @@
 				ED4BB969248D16A9001D309B /* SettingsViewController.swift */,
 				EDE79E9224977B2A00D909A8 /* PlayersViewController.swift */,
 				EDCD82122497FFCF00630560 /* WordsViewController.swift */,
+				EDB08A882499210600AB5D4E /* ScoreBoardViewController.swift */,
+				EDB08A8A2499216500AB5D4E /* GameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 				ED05CB2024910EDC003D96DE /* Player.swift in Sources */,
 				EDE79E9324977B2A00D909A8 /* PlayersViewController.swift in Sources */,
 				ED9A3BAD24923355005DABC1 /* Brain.swift in Sources */,
+				EDB08A892499210600AB5D4E /* ScoreBoardViewController.swift in Sources */,
+				EDB08A8B2499216500AB5D4E /* GameViewController.swift in Sources */,
 				ED4BB968248D16A9001D309B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
