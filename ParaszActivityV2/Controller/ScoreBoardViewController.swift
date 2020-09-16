@@ -22,8 +22,12 @@ class ScoreBoardViewController: UIViewController {
     @IBOutlet weak var team4Score: UILabel!
     @IBOutlet weak var team5Score: UILabel!
     @IBOutlet weak var team6Score: UILabel!
+    @IBOutlet weak var timeValue: UILabel!
+    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var gameTimeLabel: UILabel!
     
-    
+    var expressions = [String]()
+    var gameTime = 20
     var brain : Brain?
     var teams = [Team]()
     var totalWords: Int?
@@ -43,7 +47,14 @@ class ScoreBoardViewController: UIViewController {
         team5Score.text = ""
         team6Score.text = ""
         initialize()
+        
     }
+    
+    @IBAction func stepperChanged(_ sender: UIStepper) {
+        gameTime = Int(sender.value)
+        timeValue.text = "\(gameTime) s"
+    }
+    
     
     func initialize() {
         let teamLabels: [UILabel] = [team1, team2, team3, team4, team5, team6]
@@ -58,9 +69,18 @@ class ScoreBoardViewController: UIViewController {
             scores.append(0)
             i += 1
         }
+        
+    }
+    
+    func hideTimeSettings() {
+        stepper.isHidden = true
+        gameTimeLabel.isHidden = true
+        timeValue.isHidden = true
+        
     }
     
     @IBAction func startPressed(_ sender: UIButton) {
+        hideTimeSettings()
         performSegue(withIdentifier: "goToGame", sender: self)
     }
     
@@ -70,8 +90,13 @@ class ScoreBoardViewController: UIViewController {
         destinationVC.brain = brain
         destinationVC.teams = brain!.teams
         destinationVC.totalWords = totalWords
+        destinationVC.optGameTime = gameTime
+        destinationVC.expressions = expressions
+        hideTimeSettings()
         }
     }
+    
+    
 }
 
 

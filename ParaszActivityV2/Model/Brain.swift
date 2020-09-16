@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 
 class Brain {
-    var players = [String]()
+    //var players = [String]()
+    // Próba
+    var players = ["Csarco", "Csoldo", "Csombék"]
     var teams = [Team]()
     var playersInTeam = 2
     var numberOfTeams = 2
@@ -18,12 +20,11 @@ class Brain {
     var teamCounter = 0
     var colors = Color()
     func assignPlayers(text: String?) -> String{
-        if let name = text {
+        if text != "" {
+            let name = text!
             players.append(name)
-            return ""
-        }else {
-            return "Write something!"
         }
+        return ""
     }
     func playersAreReady(numberOfPlayers: Int) -> Bool{
         if players.count == numberOfPlayers{
@@ -58,13 +59,13 @@ class Brain {
         }
         var ass = 0
         var asd = 1
-        for team in teams {
+        /*for team in teams {
             for player in team.players {
-                print("\(ass): \(player.name)")
+                //print("\(ass): \(player.name)")
                 asd += 1
             }
             ass += 1
-        }
+        }*/
     }
     
     func shuffle(){

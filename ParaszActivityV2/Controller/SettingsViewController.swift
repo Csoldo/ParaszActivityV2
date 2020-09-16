@@ -61,7 +61,6 @@ class SettingsViewController: UIViewController {
             
         }else {
             doneButton.isEnabled = false
-
             startButton.backgroundColor = .green
             
         }

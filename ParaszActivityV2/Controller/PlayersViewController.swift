@@ -38,7 +38,6 @@ class PlayersViewController: UIViewController {
         
         if let totalPlayers = brain?.getTotalPlayers() {
             totalWords = totalPlayers * numberOfWords
-            print(totalWords)
         }
     }
     

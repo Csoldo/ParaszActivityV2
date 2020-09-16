@@ -12,6 +12,7 @@ struct Team {
     let score = 0
     var players = [Player]()
     var color : UIColor
+    var currentPlayer = 0
     func printPlayers() {
         for player in players {
             print(player.name)

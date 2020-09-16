@@ -15,30 +15,36 @@ class WordsViewController: UIViewController {
     var start = false
     var totalWords: Int?
     var currentWord = 0
-    var expressions = [String]()
+    //var expressions = [String]()
+    // Próba
+    var expressions = ["Hugy", "Szar", "Fos", "Picsa", "Segg", "Fasz", "Pablo", "R3HAB", "Tesla", "Tyúkhúsleves", "Fos", "Utolsó"]
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        textField.text = nil
+        textField.text = ""
         if let total = totalWords {
             progressLabel.text = "0/\(total)"
         }
     }
     @IBAction func sendPressed(_ sender: UIButton) {
-        if canAppend(currentWords: currentWord) == true{
-            if let text = textField.text {
+        performSegue(withIdentifier: "goToScore", sender: self)
+        /*if canAppend(currentWords: currentWord) == true{
+            if textField.text != "" {
+                let text = textField.text!
                 expressions.append(text)
                 textField.text = ""
                 currentWord += 1
                 changeProgress()
+            }else {
+                print("fuck")
             }
             
         }
         if canAppend(currentWords: currentWord) == false{
             performSegue(withIdentifier: "goToScore", sender: self)
-        }
+        }*/
         
         
     }
@@ -67,6 +73,7 @@ class WordsViewController: UIViewController {
         destinationVC.brain = brain
         destinationVC.teams = brain!.teams
         destinationVC.totalWords = totalWords
+        destinationVC.expressions = expressions
         }
     }
 }
