@@ -15,6 +15,8 @@
 		ED4BB96D248D16A9001D309B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4BB96B248D16A9001D309B /* Main.storyboard */; };
 		ED4BB96F248D16AF001D309B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4BB96E248D16AF001D309B /* Assets.xcassets */; };
 		ED4BB972248D16AF001D309B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4BB970248D16AF001D309B /* LaunchScreen.storyboard */; };
+		ED6B3BE624B77F7B00E36B0B /* baunjour.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6B3BE524B77F7B00E36B0B /* baunjour.mp3 */; };
+		ED6B3BE824B7807C00E36B0B /* countdown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6B3BE724B7807C00E36B0B /* countdown.mp3 */; };
 		ED71ADEE249502E4008EABA9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED71ADED249502E4008EABA9 /* K.swift */; };
 		ED9A3BAD24923355005DABC1 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9A3BAC24923355005DABC1 /* Brain.swift */; };
 		EDB08A892499210600AB5D4E /* ScoreBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB08A882499210600AB5D4E /* ScoreBoardViewController.swift */; };
@@ -34,6 +36,8 @@
 		ED4BB96E248D16AF001D309B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4BB971248D16AF001D309B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED4BB973248D16AF001D309B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6B3BE524B77F7B00E36B0B /* baunjour.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = baunjour.mp3; sourceTree = "<group>"; };
+		ED6B3BE724B7807C00E36B0B /* countdown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = countdown.mp3; sourceTree = "<group>"; };
 		ED71ADED249502E4008EABA9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		ED9A3BAC24923355005DABC1 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		EDB08A882499210600AB5D4E /* ScoreBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				ED47E19B248D4688006D150D /* View */,
 				ED47E19C248D4693006D150D /* Controller */,
 				ED4BB96E248D16AF001D309B /* Assets.xcassets */,
+				ED6B3BE524B77F7B00E36B0B /* baunjour.mp3 */,
+				ED6B3BE724B7807C00E36B0B /* countdown.mp3 */,
 				ED4BB970248D16AF001D309B /* LaunchScreen.storyboard */,
 				ED4BB973248D16AF001D309B /* Info.plist */,
 				ED71ADED249502E4008EABA9 /* K.swift */,
@@ -173,8 +179,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6B3BE624B77F7B00E36B0B /* baunjour.mp3 in Resources */,
 				ED4BB972248D16AF001D309B /* LaunchScreen.storyboard in Resources */,
 				ED4BB96F248D16AF001D309B /* Assets.xcassets in Resources */,
+				ED6B3BE824B7807C00E36B0B /* countdown.mp3 in Resources */,
 				ED4BB96D248D16A9001D309B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
